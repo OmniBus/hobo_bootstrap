@@ -15,7 +15,7 @@ Add this to your Gemfile
     gem "hobo_bootstrap", :git => "git://github.com/suyccom/hobo_bootstrap.git"
     group :assets do
       # ... Other stuff ... #
-      gem 'compass_twitter_bootstrap', :git => 'git://github.com/colvint/compass-twitter-bootstrap', :ref => '48fb6b4f7d'
+      gem 'compass_twitter_bootstrap', :git => 'git://github.com/wyuenho/compass-twitter-bootstrap'
       gem 'compass-rails'
     end
     
@@ -38,9 +38,15 @@ Rename front.css to front.scss so you can bootstrap and hobo_bootstrap like this
      *= require hobo_jquery_ui
      *= require jquery-ui/redmond
      *= require hobo_bootstrap
+     *= require hobo_bootstrap_docs
+     *= require hobo_bootstrap_responsive
      *= require_tree ./front
     */
     @import "compass_twitter_bootstrap";
+    
+Load bootstrap javascripts in app/assets/front.js, for example:
+
+    //= require bootstrap-collapse
     
 Change the theme in app/views/taglibs/front_site.dryml:
 

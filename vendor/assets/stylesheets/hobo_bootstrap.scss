@@ -1,24 +1,52 @@
-/* Top Menu: make sure it stays in the middle */
-.navbar .container {
-  width: 940px;
+/* Top menu bar (app name, login...): 
+   It's full width so border-radius is unnecessary */
+.navbar-inner{
+  border-radius:0px;
 }
 /* Top menu tweaks */
 .dev-user-changer{
   margin-top:3px;
   opacity:0.8;
+  border-radius:4px;
 }
 .dev-user-changer select{
   margin-bottom:5px;
 }
+
+
+
+
+
+/* Main menu bar (model links): search box*/
 .form-search{
   margin-bottom:0;
 }
 .form-search i {
-  margin: -20px 0 0 215px;
+  margin: -20px 0 0 190px;
   display: block;
   position:absolute;
 }
-.card, .form, .new, .edit{
+#search-results-part{
+  display:none;
+}
+
+
+
+
+/* Page heading */
+.bootstrap-content{
+  margin-top:16px;
+}
+h2.heading{
+  margin-bottom:10px;
+  line-height:24px;
+}
+
+
+
+/* FIXME: Dirty hacks after here !! */
+/* Add 'well' class look to some elements: this should be improved */
+/*.card, .form, .new, .edit{
   background-color: #F5F5F5;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 4px 4px 4px 4px;
@@ -32,7 +60,6 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
   outline: 0 none;
 }
-
 
 .actions:after {
     clear: both;
@@ -58,22 +85,4 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 .collection li{
   list-style:none;
 }
-
-
-
-fieldset.feckless-fields .field {
-    padding-left: 150px;
-}
-fieldset.feckless-fields .field, fieldset.feckless-fields .buttons {
-    margin: 0 0 1em;
-}
-fieldset.feckless-fields .field label {
-  clear: none;
-  display: inline;
-  float: left;
-  margin-left: -150px;
-  width: 140px;
-  font-weight: bold;
-  text-align: right;
-}
-
+*/
